@@ -26,7 +26,7 @@ body {
     margin-left: 24px;
 }
 
-.header__nav-list {
+.header__nav ul {
     display: flex;
     list-style: none;
     gap: 24px;
@@ -35,11 +35,23 @@ body {
     margin-right: 24px;
 }
 
-.header__nav-item--selected {
+.header__nav a {
+    text-decoration: none;
+    color: var(--color-text);
+    border-radius: 8px;
+    
+}
+.header__nav a:hover {
+    text-decoration: underline;
+}
+
+a.header__nav-item--selected {
     background-color: var(--color-primary);
     color: var(--color-background);
     padding: 8px 16px;
-    border-radius: 8px;
+
+    pointer-events: none;
+    cursor: default;
 }
 
 .main-title {
@@ -49,5 +61,39 @@ body {
     margin-top: 40px;
     margin-bottom: 40px;
     color: var(--color-text);
+}
+
+.plans {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 16px;
+    justify-content: center;
+}
+
+.plan {
+    background-color: var(--color-card);
+    border-radius: 8px;
+    padding: 24px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+    flex: 1;
+}
+
+.plan__title {
+    font-size: 1.5em;
+    margin-bottom: 16px;
+    border-bottom: 2px solid var(--color-primary);
+    padding-bottom: 8px;
+}
+
+.plan__price {
+    font-size: 2em;
+    margin-bottom: 16px;
+}
+
+.plan__features {
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
