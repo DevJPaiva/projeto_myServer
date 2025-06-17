@@ -3,61 +3,62 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>MyServer</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-    <header>
+    <header class="header">
         <div class="header__logo">
             MyServer
         </div>
         <nav class="header__nav">
-            <ul>
+            <ul class="header__nav-list">
                 <li><a href="#"></a>Home</li>
-                <li><a href="#"></a>Plano</li>
+                <li class="header__nav-item--selected"><a href="#"></a>Plano</li>
                 <li><a href="#"></a>Suporte</li>
                 <li><a href="#"></a>Contato</li>
             </ul>
         </nav>
     </header>
 
-    <h1 class="main-title">EScolha seu Plano</h1>
+    <h1 class="main-title">Escolha seu Plano</h1>
 
     <section class="plans">
         <div class="plan">
             <h2 class="plan__title">Plano Básico</h2>
-            <p>R$ 29,90/mês</p>
-            <ul>
+            <p> <span class="plan__price">R$ 29,90</span>/mês</p>
+            <ul class="plan__content">
                 <li>1 Domínio</li>
                 <li>10 GB de Armazenamento</li>
                 <li>Suporte 24/7</li>
             </ul>
-            <button>Assine já</button>
+            <button class="plan__cta">Assine já</button>
         </div>
 
         <div class="plan">
             <h2 class="plan__title">Plano Intermediário</h2>
-            <p>R$ 49,90/mês</p>
-            <ul>
+            <p> <span class="plan__price">R$ 49,90</span>/mês</p>
+            <ul class="plan__content">
                 <li>5 Domínios</li>
                 <li>50 GB de Armazenamento</li>
                 <li>Suporte 24/7</li>
                 <li>Backup Semanal</li>
             </ul>
-            <button>Assine já</button>
+            <button class="plan__cta">Assine já</button>
         </div>
 
         <div class="plan">
             <h2 class="plan__title">Plano Avançado</h2>
-            <p>R$ 99,90/mês</p>
-            <ul>
+            <p> <span class="plan__price">R$ 99,90</span>/mês</p>
+            <ul class="plan__content">
                 <li>10 Domínios</li>
                 <li>100 GB de Armazenamento</li>
                 <li>Suporte 24/7</li>
                 <li>Backup Diário</li>
                 <li>SSL Gratuito</li>
             </ul>
-            <button>Assine já</button>
+            <button class="plan__cta">Assine já</button>
         </div>
     
 </body>

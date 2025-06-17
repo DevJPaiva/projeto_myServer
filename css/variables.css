@@ -1,0 +1,14 @@
+/* variables.css
+
+ * Variables for the color scheme of the application.
+ * These variables can be used throughout the CSS to maintain consistency.
+ */
+
+:root {
+  --color-primary: #CBE200;
+  --color-background: #0C1013;
+  --color-navbar: #050709;
+  --color-card: #20262C;
+  --color-text: #FFFFFF;
+}
+
