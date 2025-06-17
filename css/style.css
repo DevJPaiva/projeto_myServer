@@ -81,6 +81,7 @@ a.header__nav-item--selected {
 
 .plan__title {
     font-size: 1.5em;
+    letter-spacing: 2px;
     margin-bottom: 16px;
     border-bottom: 2px solid var(--color-primary);
     padding-bottom: 8px;
@@ -91,9 +92,28 @@ a.header__nav-item--selected {
     margin-bottom: 16px;
 }
 
-.plan__features {
-    list-style: none;
+.plan__content {
+    list-style: circle color var(--color-primary);
     padding: 0;
     margin: 0;
+}
+/*
+.plan__content li {
+    /*margin-bottom: 12px;
+    padding-left: 16px;
+}*/
+
+.plan__content li::marker {
+    color: var(--color-primary);
+}
+
+.plan__cta {
+    display: block;
+    text-align: center;
+    background-color: var(--color-primary);
+    padding: 8px 16px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
 }
 
