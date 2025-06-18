@@ -128,6 +128,7 @@ a.header__nav-item--selected {
 
 .plan__cta:hover {
     background-color: var(--color-background);
+    outline: 2px solid var(--color-primary);
     color: var(--color-primary);
 }
 
